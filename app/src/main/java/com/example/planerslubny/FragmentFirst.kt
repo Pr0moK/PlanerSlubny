@@ -22,9 +22,10 @@ class FragmentFirst : Fragment() {
 
         val args = FragmentFirstArgs.fromBundle(requireArguments())
         var guests = args.guestList
-
-        guests = guests?.plus("dupa")
-        Log.d("wiadomosc", "${guests?.toList().toString()}")
+        var tablelist = args.tableList
+        var tablecount = args.tableCount
+        var sortedguest = args.sortedGuest
+        Log.d("wiadomosc", "${guests?.toList().toString()} || ${tablelist?.toList().toString()}")
 
 
 
@@ -34,7 +35,7 @@ class FragmentFirst : Fragment() {
         }
 
         binding.button2.setOnClickListener {
-            findNavController().navigate(FragmentFirstDirections.actionFragmentFirstToFragmentThree(guests))
+            findNavController().navigate(FragmentFirstDirections.actionFragmentFirstToFragmentThree(guests,tablelist,tablecount,sortedguest))
         }
 
         return binding.root

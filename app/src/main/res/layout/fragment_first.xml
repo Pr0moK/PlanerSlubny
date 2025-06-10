@@ -22,25 +22,29 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/agdasima"
                 android:text="Menu"
                 android:textColor="@color/tekst"
-                android:textSize="30dp"
+                android:textSize="72dp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.561"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.33" />
+                app:layout_constraintVertical_bias="0.232" />
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="76dp"
                 android:backgroundTint="@color/guzik"
                 android:text="Lista gości"
                 android:textColor="@color/tekst"
+                android:textSize="20sp"
                 app:layout_constraintTop_toBottomOf="@+id/textView"
-                tools:layout_editor_absoluteX="25dp" />
+                tools:layout_editor_absoluteX="0dp" />
 
             <Button
                 android:id="@+id/button2"
@@ -51,21 +55,23 @@
                 android:paddingBottom="6dp"
                 android:text="Ustawienie stołów"
                 android:textColor="@color/tekst"
+                android:textSize="20sp"
                 app:layout_constraintTop_toBottomOf="@+id/button"
                 tools:layout_editor_absoluteX="16dp" />
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/guzik"
-                android:text="Kosztorys"
-                android:textColor="@color/tekst"
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="161dp"
+                android:layout_below="@id/textView"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.777"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button2"
-                app:layout_constraintVertical_bias="0.015" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.236"
+                app:srcCompat="@drawable/kwiaty" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 </layout>

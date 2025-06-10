@@ -19,6 +19,20 @@
             app:argType="string[]"
             app:nullable="true"
             android:defaultValue="@null" />
+        <argument
+            android:name="table_list"
+            app:argType="string[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="table_count"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="sorted_guest"
+            app:argType="string[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </fragment>
     <fragment
         android:id="@+id/fragmentTwo"
@@ -42,6 +56,20 @@
             app:destination="@id/fragmentFirst" />
         <argument
             android:name="guest_list"
+            app:argType="string[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="table_list"
+            app:argType="string[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="table_count"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="sorted_guest"
             app:argType="string[]"
             app:nullable="true"
             android:defaultValue="@null" />

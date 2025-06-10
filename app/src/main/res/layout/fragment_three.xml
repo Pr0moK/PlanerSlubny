@@ -9,7 +9,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/tlo"
+        android:backgroundTint="@color/tlo">
 
         <Button
             android:id="@+id/button5"
@@ -53,11 +55,27 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.434" />
 
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/guzik"
+            android:text="Dodaj gościa do stołu"
+            android:textColor="@color/tekst"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.364" />
+
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="128dp"
+            android:background="@color/guzik"
+            android:backgroundTint="@color/oddzielacz"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,10 +83,66 @@
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#B69191"
+            android:backgroundTint="@color/oddzielacz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner"
             app:layout_constraintVertical_bias="0.084"
             tools:layout_editor_absoluteX="2dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:divider="@color/oddzielacz"
+            android:dividerHeight="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9"
+            app:layout_constraintVertical_bias="0.813"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz gościa z listy:"
+            android:textColor="@color/tekst"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5"
+            app:layout_constraintVertical_bias="0.785" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz gościa z listy:"
+            android:textColor="@color/tekst"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:layout_constraintVertical_bias="0.64" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ustawienie stołów:"
+            android:textColor="@color/tekst"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
